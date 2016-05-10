@@ -44,7 +44,7 @@ class SerialPort(object):
         thread.start()
 
         # lock for making boolean access threadsafe.
-        self.__lock = threading.Lock();
+        self.__lock = threading.Lock()
 
         # Initialize the pyserial serial port object that this object wraps.
         config = SerialConfig()
